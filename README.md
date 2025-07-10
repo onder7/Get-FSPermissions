@@ -1,8 +1,6 @@
 
-# Seçenek 1: En Kısa Versiyon (GitHub "About" bölümü için)
-
-**Türkçe:**
-> PowerShell ile dosya sunucusu klasör yetkilerini (NTFS) analiz ve raporlama script'i.
+# PowerShell ile dosya sunucusu klasör yetkilerini (NTFS) analiz ve raporlama script'i.
+![image](https://github.com/user-attachments/assets/c25d8817-30f3-4919-935f-d5a46ab8d849)
 
 **EN:**
 > A PowerShell script to analyze and report NTFS folder permissions on a File Server.
@@ -11,7 +9,7 @@
 **Türkçe:**
 > Bu PowerShell script'i, dosya sunucularındaki karmaşık klasör yetki yapılarını analiz etmek için geliştirilmiştir. Belirtilen bir yol altındaki tüm klasörlerin Erişim Kontrol Listelerini (ACL) tarar, sistem yöneticilerinin güvenlik denetimleri yapmasını ve yetki kirliliğini temizlemesini kolaylaştıracak şekilde anlaşılır bir rapor sunar.
 
-**İngilizce:**
+**EN:**
 > This PowerShell script is designed to analyze complex folder permission structures on file servers. It scans the Access Control Lists (ACLs) for all folders under a specified path and provides a clear report to help system administrators perform security audits and clean up permission clutter.
 
 
@@ -51,3 +49,31 @@ Güvenlik Notları:
 Script, yalnızca okuma yetkisi olan klasörlere erişebilir
 Yetki hatalarını yakalar ve gösterir
 COM objelerini düzgün şekilde temizler
+
+**EN**
+GUI Interface: User-friendly Windows Forms-based interface
+Folder Selection: Easy folder selection with the Browse button
+Detailed Analysis: Folder permissions, user/group information, permission types
+Export Options: Export in CSV and Excel formats
+Progress Tracking: Process status tracking
+
+Script Functions:
+
+Permission Analysis: Analyzes all permissions in the selected folder and subfolders
+Domain User Detection: Determines which permissions belong to domain users
+Depth Control: Performs analysis at a maximum depth of 3 levels
+Filtering: Displays only "Allow" type permissions
+
+Usage:
+
+Run the script in PowerShell
+Select the folder to be analyzed
+Click the "Analyze" button
+View the results
+Export to CSV or Excel as needed
+
+Security Notes:
+
+The script can only access folders with read permissions
+Catches and displays permission errors
+Properly cleans up COM objects
